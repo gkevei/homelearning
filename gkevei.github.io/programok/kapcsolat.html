@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" width="initial-scale" , initial-scale=1.0,>
+    <title>Rendelések</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <legend>Személyes adatok:</legend>
+                Név: <input type="text"><br>
+                Email: <input type="text"><br>
+                Szűletési idő: <input type="text"><br>
+            </fieldset>
+        </form>
+        <form class="form-group">
+            <fieldset>
+                <legend>Feltétek</legend>
+         </fieldset>
+        </form>       
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Feltétek</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Válasszon....</option>
+              <option value="1">Saláta</option>
+              <option value="2">Sajt</option>
+              <option value="3">Csipős paprika</option>
+              <option value="4">hagyma</option>
+            </select>
+        </div>
+        </form>
+        <a>
+        <fieldset>
+            <div class="form-group">
+                <label for="menyiség">Mennyisége</label>
+                <input id="menyiség" name="amount-input" type="number" required>
+            </div>
+
+            <div class="form-group">
+                Fizetendő :
+                <span class="show-amount">0</span>
+                ,- Ft
+            </div>
+        </fieldset>
+        <button onclick="calcAmount()" name="amount-input" class="btn btn-primary" type="button">Megrendelés</button>
+    </a>
+    </div>
+
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
